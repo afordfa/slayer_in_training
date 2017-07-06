@@ -1,0 +1,27 @@
+GIT INSTRUCTIONS:
+	Replace dev with the  name of your working branch
+
+
+1. 	in dev branch local
+	git add .
+	git commit -m ""
+	git push origin dev
+
+2. 	git checkout master
+	git pull
+
+3.  git checkout dev
+	git merge master
+
+
+	IF MERGE CONFLICTS - Resolve them in the file
+	git add .
+	git commit -m ""
+	git push origin dev
+	git merge master
+
+4. 	git checkout master
+	git merge dev
+
+5. 	git push origin master
+
