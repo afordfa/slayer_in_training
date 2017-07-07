@@ -33,7 +33,7 @@ var Timer = React.createClass({
             <div className="form-group" style = {{fontWeight: "bold"}}>
                
 
-              &nbsp; Timers &nbsp;
+              &nbsp; Timer Options &nbsp;
               <select 
               name="timers"
               value={this.state.timerType}
@@ -45,7 +45,7 @@ var Timer = React.createClass({
                 <option value="run">Run Timer (Count Up)</option>
               </select>
               
-              &nbsp; Minutes &nbsp;
+              &nbsp; Time (Minutes) &nbsp;
                <input
                 type="number"
                 min="1"

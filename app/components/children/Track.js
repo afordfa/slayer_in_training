@@ -12,7 +12,7 @@ import {Link} from "react-router";
 var Track = React.createClass({
   getInitialState: function() {
     var value = new Date().toISOString();
-    return { times: [], distance: "1 mile", minutes: 0, seconds: 0, value: value, user: 0 };
+    return { times: [], distance: "Slay", minutes: 0, seconds: 0, value: value, user: 0 };
     this.getTimes = this.getTimes.bind(this);
   },
 
@@ -70,14 +70,11 @@ var Track = React.createClass({
           <form style={{ textAlign: "center" }} >
 
             <div className="form-group" style ={{textAlign: "center", display: "inline-block" }}>
-              <h4 className="" style={{display: "inline-block"}}>
-                Date
-                  <DatePicker id="example-datepicker" style={{display: "inline-block", width: 300, float: "none" }} value={this.state.value} onChange={this.handleDateChange} />
-              </h4>
+
               <div><h4 className="">
-                <strong>Track a workout or a run</strong> &nbsp;
+                <strong style ={{fontFamily:"Jolly Lodger", fontSize: 40, color: "#cc0000", borderRadius: 50}}>Track a workout or a run</strong> </h4>
               
-                <select 
+                <select style ={{borderRadius: 50}}
                 name="distance"
                 value={this.state.distance}
                 id="distance"
@@ -99,12 +96,15 @@ var Track = React.createClass({
                   <option value="11 miles">11 miles</option>
                   <option value="12 miles">12 miles</option>
                   <option value="13.1 miles">13.1 miles (Half Marathon)</option>                  
-                </select> </h4>
+                </select> 
               </div>   
             </div>
           </form>       
         </div>
-
+              <h4 className="text-center">
+              Date &nbsp;  
+              <DatePicker id="example-datepicker" showClearButton={false} style={{display: "inline-block", width: 300, borderRadius: 50, float: "none",  }} value={this.state.value} onChange={this.handleDateChange} />
+              </h4>
          
           <form>
           {/*I HAVE NO IDEA HOW TO GET THESE TO APPEAR SIDE-BY-SIDE!!! */}
@@ -118,7 +118,7 @@ var Track = React.createClass({
               id="minutes"
               onChange={this.handleChange}
               required
-              style={{width: 300, textAlign: "center", float: "none", display: "inline-block"}}
+              style={{width: 300, textAlign: "center", float: "none", display: "inline-block", borderRadius: 50}}
             /> </h4> 
 
             <h4 className="" style={{marginLeft: 20, display: "inline-block"}}>
@@ -133,7 +133,7 @@ var Track = React.createClass({
               id="seconds"
               onChange={this.handleChange}
               required
-              style={{marginLeft: 5, width: 300, textAlign: "center", float: "none", display: "inline-block" }}
+              style={{marginLeft: 5, width: 300, textAlign: "center", float: "none", display: "inline-block", borderRadius: 50 }}
             />
             </div>
           </form>

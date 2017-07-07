@@ -101,11 +101,11 @@ var Login = React.createClass({
 
     <div>
       <h3 className="text-center" style = {{fontFamily:"Jolly Lodger", fontSize: 45}}> Not your average workout app!</h3> <br></br>
-       <p className="text-center">Once you login, choose how much time you have to train, and what you'd like to focus on, <br></br>
+       <p className="text-center" style = {{fontFamily:"Fantasy", fontSize: 20}}>Once you login, choose how much time you have to train, and what you'd like to focus on, <br></br>
       and let us generate a unique, slayer worthy workout just for you! <br></br>
       Not sure what you want to focus on?<br></br> Choose The Full Buffy for a full body workout including 
       Mobility, Endurance, and Strength.</p>        
-        <div className="text-center" idName="subHeader"> <h3 idName="welcome">Welcome Slayer!</h3> 
+        <div className="text-center" idName="subHeader"> <h3 idName="welcome"style = {{fontFamily:"Jolly Lodger", fontSize: 45, color: "#cc0000"}}>Welcome Slayer!</h3> 
           <p>Ready to train?</p> 
             <p className ="text-center">
               
