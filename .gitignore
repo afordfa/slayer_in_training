@@ -60,9 +60,8 @@ typings/
 
 .DS_Store
 
-bundle.js
+
 git merge.jpg
-bundle.js
 app/components/.DS_Store
 app-env
 keys.js
