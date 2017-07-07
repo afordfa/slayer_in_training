@@ -53,7 +53,7 @@ var Timer = React.createClass({
                 id="duration"
                 onChange={this.handleChange}
                 required
-                style ={{width: 250 }}
+                style ={{width: 250, textAlign: "center"}}
               />
             </div>
           </form>
