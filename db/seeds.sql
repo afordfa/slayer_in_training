@@ -91,7 +91,7 @@ VALUES
 ("Eagle Arms Left/Right", 1, "Mobility, Buffy", "arms", NOW(), NOW()),
 ("Over the Head Tricep Stretch Left/Right", 1, "Mobility, Buffy", "arms", NOW(), NOW()),
 ("Hand Clasped Behind Back Shoulder Stretch", 1, "Mobility, Buffy", "arms", NOW(), NOW()),
-("Tai Qi Arm Swings", 1, "Mobility, Buffy", "arms", NOW(), NOW()),
+("Tai Chi Arm Swings", 1, "Mobility, Buffy", "arms", NOW(), NOW()),
 ("Bridge Pose", 1, "Mobility, Buffy", "core", NOW(), NOW()),
 ("Cat/Cow Stretch", 2, "Mobility, Buffy", "core", NOW(), NOW()),
 ("Bow Pose", 1, "Mobility, Buffy", "core", NOW(), NOW()),
