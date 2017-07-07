@@ -6,7 +6,7 @@ import {browserHistory} from 'react-router';
 import keys from '../utils/keys.js';
 var axios = require("axios");
 var fbAppId = keys.FbApp;
-console.log(fbAppId);
+
 
 var Login = React.createClass({
 
