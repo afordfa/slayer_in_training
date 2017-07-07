@@ -103,7 +103,7 @@ var Track = React.createClass({
         </div>
               <h4 className="text-center">
               Date &nbsp;  
-              <DatePicker id="example-datepicker" showClearButton={false} style={{display: "inline-block", width: 300, borderRadius: 50, float: "none",  }} value={this.state.value} onChange={this.handleDateChange} />
+              <DatePicker id="example-datepicker" showClearButton={false} style={{display: "inline-block", width: 300, borderRadius: 50, float: "none"}} value={this.state.value} onChange={this.handleDateChange} />
               </h4>
          
           <form>
