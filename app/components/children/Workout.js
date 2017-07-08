@@ -29,6 +29,7 @@ var Workout = React.createClass({
 
   componentDidMount: function() {
     if(this.props.username === 'rwar') {
+      console.log("redirect")
       browserHistory.push('/');
     }
   },

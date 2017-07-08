@@ -22,6 +22,8 @@ var Login = React.createClass({
       FB.AppEvents.logPageView();
       FB.Event.subscribe('auth.statusChange', function(response) {
         if (response.authResponse) {
+          console.log("test: " + response.authResponse.userID)
+          this.props.setUser(response.authResponse.userID);
         } else {
           console.log('---->User cancelled login or did not fully authorize.');
         }
@@ -59,7 +61,9 @@ var Login = React.createClass({
         console.log("response id: " + response.id);
         if(!res.data) {
           var postUrl = "/api/users";
-          axios.post(postUrl, data);
+          axios.post(postUrl, data).then(function(){
+            browserHistory.push('/workout');
+          });
         }
       })
 
