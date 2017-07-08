@@ -6,10 +6,23 @@ var Times = require("./track/Times.js");
 var DatePicker = require("react-bootstrap-date-picker");
 var axios = require("axios");
 import {Link} from "react-router";
+import {browserHistory} from 'react-router';
+import keys from '../utils/keys.js';
+var fbAppId = keys.FbApp;
 
 
 
 var Track = React.createClass({
+  //if user is not logged in, sent back to main page.
+  componentDidMount: function() {
+    console.log(this.props.username);
+    if(this.props.username === 'rwar') {
+      browserHistory.push('/');
+    } else {
+        this.getTimes();
+      }
+  },
+
   getInitialState: function() {
     var value = new Date().toISOString();
     return { times: [], distance: "Slay", minutes: 0, seconds: 0, value: value, user: 0 };
@@ -30,10 +43,6 @@ var Track = React.createClass({
     });
   },
 
-  componentDidMount: function(){
-    this.getTimes();
-
-  },
 
   componentDidUpdate: function(){
     // Access ISO String and formatted values from the DOM. 

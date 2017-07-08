@@ -3,6 +3,9 @@ var React = require("react");
 var axios = require("axios");
 import {Link} from "react-router";
 var Timer = require("./workout/Timer.js");
+import {browserHistory} from 'react-router';
+import keys from '../utils/keys.js';
+var fbAppId = keys.FbApp;
 
 // Here we include all of the sub-components
 
@@ -24,6 +27,11 @@ var Workout = React.createClass({
   // 7) if user chooses track redirect to tracker page (4th wire frame)
   // 8) add a button on each page (besides login) the reditects to a workout resources list (for now straight up weblinks, will complie ASAP)
 
+  componentDidMount: function() {
+    if(this.props.username === 'rwar') {
+      browserHistory.push('/');
+    }
+  },
   // Here we render the function
   getInitialState: function() {
     return { selection: "15m", time: 15, type: "Mobility", exercises: [], workout: []};
