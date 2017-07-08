@@ -18,6 +18,7 @@ Future add ons:
 4) Link to others on the app and have AMRP or run times contests with leader boards 
 5) Pop-up banners of encouragement 
 6) Build out resources page with user API search for videos
+7) added meditation feature 
 
 Heroku link: https://slayer-in-training.herokuapp.com/
 
