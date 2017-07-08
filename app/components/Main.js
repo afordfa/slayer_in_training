@@ -49,7 +49,7 @@ render: function() {
           {children} 
         </div>
             <div className="footer" style={{backgroundColor: "#4d4d4d", color: "#f1e9d2", borderStyle: "solid", borderWidth: 0,  textAlign: "Center",  position: "fixed", left: 0, bottom:0, right: 0}}>     
-            &copy; The Scoobies
+            &copy; The Scoobies: Leigh Fisher | Anita Ford
             </div>
       </div>
     )
