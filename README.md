@@ -17,6 +17,7 @@ Future add ons:
 3) Tabata timer feature
 4) Link to others on the app and have AMRP or run times contests with leader boards 
 5) Pop-up banners of encouragement 
+6) Build out resources page with user API search for videos
 
 Heroku link: https://slayer-in-training.herokuapp.com/
 
