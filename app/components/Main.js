@@ -48,7 +48,7 @@ render: function() {
            <h1 style={{fontFamily: "New Rocker", fontStyle: "Cursive", fontSize: 70 }}> Slayer in Training </h1>
             <p className ="text-center" style = {{fontSize: 25, fontFamily: "fantasy", marginTop: 10}} > Better. Faster. Stronger. Outrun the demons. </p>             
         </div>
-        <div style={{paddingBottom: 60}}>
+        <div >
           {children} 
         </div>
             <div className="footer" style={{backgroundColor: "#4d4d4d", color: "#f1e9d2", borderStyle: "solid", borderWidth: 0,  textAlign: "Center",  position: "fixed", left: 0, bottom:0, right: 0}}>     
