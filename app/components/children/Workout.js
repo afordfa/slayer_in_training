@@ -112,6 +112,9 @@ var Workout = React.createClass({
           }       
         }
       }
+      if (this.state.type === "Buffy") {
+        workoutBuild.push({title: "Breath Count Meditation (inhale for count of 6, hold for 2, exhale 6, hold 2)", minutes: 5})
+      };
       this.setState({workout: workoutBuild}) 
   },
   render: function() {
