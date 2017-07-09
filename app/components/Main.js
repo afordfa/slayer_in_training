@@ -1,6 +1,7 @@
 // Include React
 var React = require("react");
 var axios = require("axios");
+import {browserHistory} from 'react-router';
 
 // Here we include all of the sub-components
 
@@ -24,6 +25,8 @@ var Main = React.createClass({
       console.log(res);
       console.log("new id: " + res.data.id)
       this.setState({username: res.data.id});
+    }).then(function(){
+      browserHistory.push('/workout');
     })
     
   },
