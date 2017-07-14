@@ -45,7 +45,7 @@ render: function() {
           borderWidth: 0,  
           textAlign: "Center",
           }}>
-           <h1 style={{fontFamily: "New Rocker", fontStyle: "Cursive", fontSize: 70 }}>   S     layer in Training </h1>
+           <h1 style={{fontFamily: "New Rocker", fontStyle: "Cursive", fontSize: 70 }}>Slayer in Training </h1>
             <p className ="text-center" style = {{fontSize: 25, fontFamily: "fantasy", marginTop: 10}} > Better. Faster. Stronger. Outrun the demons. </p>             
         </div>
         <div style={{marginBottom: 40}}>
