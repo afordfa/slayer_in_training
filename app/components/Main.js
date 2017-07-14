@@ -48,11 +48,13 @@ render: function() {
            <h1 style={{fontFamily: "New Rocker", fontStyle: "Cursive", fontSize: 70 }}> Slayer in Training </h1>
             <p className ="text-center" style = {{fontSize: 25, fontFamily: "fantasy", marginTop: 10}} > Better. Faster. Stronger. Outrun the demons. </p>             
         </div>
-        <div >
+        <div style={{marginBottom: 40}}>
           {children} 
         </div>
             <div className="footer" style={{backgroundColor: "#4d4d4d", color: "#f1e9d2", borderStyle: "solid", borderWidth: 0,  textAlign: "Center",  position: "fixed", left: 0, bottom:0, right: 0}}>     
-            &copy; The Scoobies: Leigh Fisher | Anita Ford
+            &copy; The Scoobies: Leigh Fisher (<a style={{color: "#f1e9d2", textAlign: "Center"}} href="https://github.com/lafisher">Connect with Leigh</a>) | 
+              Anita Ford (<a style={{color: "#f1e9d2", textAlign: "Center"}} href="https://afordfa.github.io/anitamford/portfolio.html">Connect with Anita</a>)<br/>
+              <a style={{color: "#f1e9d2", textAlign: "Center"}} href = "https://github.com/afordfa/slayer_in_training">View Slayer in Training on Github</a>
             </div>
       </div>
     )
